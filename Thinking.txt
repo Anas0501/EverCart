@@ -1,2 +1,39 @@
+THIS FILE HAS THE THINKING WHILE I WAS MAKING THE PROJECT SO JUST IGNORE THE FILE THERE IS NOTHING IMPORTANT IN THIS FILE 
 DashBoard-https://dribbble.com/shots/19855432-E-commerce-Dashboard
 Main Page-https://dribbble.com/shots/21188194-sport-shop-website-design
+CallBack-https://evercart-0501.firebaseapp.com/__/auth/handler
+
+routes-
+    for Users{[/api/auth/]
+      authUser,(user auth user middleware)-PENDING
+      createNewUser,- DONE
+      getAllUser,-DONE
+      getUserById,- DONE
+      getLoggedInUser, -DONE
+      editProfile,-DONE
+      logoutUser,-PENDING
+      deleteUser,-DONE
+      changeUserIsAdminStatus,(optional)
+    },
+    for Products{
+      createProduct,
+      getAllProducts,
+      getProductsById,
+      getmyProducts,
+      updateProducts,
+      deleteProducts,
+    },
+    for Review{
+      getAllProductReview,
+      CreateProductReview,
+      updateProductReview,
+      deleteProductReview,
+    },
+    for Order{
+      createNewOrder,
+      getMyOrder,
+      getAllOrders,
+      getOrderById,
+      updateOrderToPaid,
+      UpdateOrdertoDelivered,
+    },
