@@ -5,12 +5,12 @@ const userController = require('../controller/user');
 const checkFirebaseAuth = require('../middleware/checkFirebaseAuth')
 
 
-router.post("/",checkFirebaseAuth,authenticateUser,userController.createNewUser);
-router.get("/user",userController.getAllUsers)
-router.get("/user/:id",userController.getUserById);
-router.get("/user/me",userController.getLoggedInUser);
-router.put("/",userController.editProfile);
-router.delete("/",userController.deleteUser);
+router.post("/", authenticateUser, userController.createNewUser);
+router.get("/user", userController.getAllUsers)
+router.get("/user/:id", userController.getUserById);
+router.get("/user/me", userController.getLoggedInUser);
+router.put("/", userController.editProfile);
+router.delete("/", userController.deleteUser);
 
 
 
