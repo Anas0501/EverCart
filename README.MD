@@ -1,0 +1,58 @@
+THIS FILE HAS THE THINKING WHILE I WAS MAKING THE PROJECT SO JUST IGNORE THE FILE THERE IS NOTHING IMPORTANT IN THIS FILE 
+DashBoard-https://dribbble.com/shots/19855432-E-commerce-Dashboard
+Main Page-https://dribbble.com/shots/21188194-sport-shop-website-design
+CallBack-https://evercart-0501.firebaseapp.com/__/auth/handler
+
+routes-
+		for Users{[/api/auth/]
+			authUser,(user auth user middleware)-PENDING
+			createNewUser,- DONE
+			getAllUser,-DONE
+			getUserById,- DONE
+			getLoggedInUser, -DONE
+			editProfile,-DONE
+			logoutUser,-PENDING
+			deleteUser,-DONE
+		},
+		for Products{[api/product]
+			createProduct,-DONE
+			getAllProducts,-DONE
+			getProductById,-DONE
+			getmyProducts,-DONE
+			updateProduct,-DONE
+			deleteProduct,-DONE
+		},
+		for Review{[/api/review]
+			getAllProductReview,-DONE
+			CreateProductReview,-DONE
+			updateProductReview,-DONE
+			deleteProductReview,-DONE
+		},
+		for Order{[/api/order]
+			createNewOrder,-DONE
+			getMyOrder,-DONE
+			getAllOrders,-DONE
+			getOrderById,-DONE
+			updateOrderToPaid,-DONE
+			UpdateOrdertoDelivered,-DONE
+		},
+
+
+To implement authentication
+
+In frontend when you get the data of the user from firebase.
+Firebase also allows us to get the idToken of the user
+
+With that idToken we can find the data of the user in our backend.
+
+
+Whenever we send request to server we will send idToken to the backend
+On server we can use that idToken to find the data of the user
+
+getCurrentUser
+	- Get firebase userdata from the idToken
+	- That userdata contains a uid
+	- With that uid we get the userdata from our own database
+	- const user= await User.find({ uid })
+
+

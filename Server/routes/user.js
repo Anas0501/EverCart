@@ -12,6 +12,5 @@ router.get("/user/me", userController.getLoggedInUser);
 router.put("/", userController.editProfile);
 router.delete("/", userController.deleteUser);
 
-
-
 module.exports = router;
+

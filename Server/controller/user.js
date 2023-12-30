@@ -6,7 +6,7 @@ const validateRequestBody = require('../middleware/validateRequestBody');
 exports.createNewUser = [
 	body("name", "Name is required").trim().isLength({ min: 3, max: 30 }),
 	body('email', 'Valid email is required').isEmail(),
-	body('uid', 'UID is required'),
+	body('uid', 'UID is required').notEmpty(),
 	body('phone', 'Valid phone number is required').matches(/^(\+91|0)?[6789]\d{9}$/),
 	validateRequestBody,
 	async (res, req) => {

@@ -23,13 +23,11 @@ const userSchema = new mongoose.Schema(
 		},
 		phone: {
 			type: String,
-			required: true,
 			unique: true,
 			match: phoneRegex,
 		},
 		isAdmin: {
 			type: Boolean,
-			required: true,
 			default: false,
 		},
 	},
