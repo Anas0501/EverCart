@@ -24,21 +24,13 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(cors());
 
+// Main page to know that the API is running 
 app.get('/', (req, res) => {
 	res.send('API is Running...');
 });
 
-app.use("/api/auth", require('./routes/user'));
-app.use("/api/product", require('./routes/product'));
-app.use("/api/review",require('./routes/review'));
-app.use("/api/order",require('./routes/order'));
+// Routes
 
 app.listen(PORT, () => {
 	console.log(`Server is running on port ${PORT}`.green.bold);
 });
-
-
-
-
-
-
