@@ -19,6 +19,3 @@ async function checkFirebaseAuth(req, res, next) {
 }
 
 module.exports = checkFirebaseAuth;
-
-
-

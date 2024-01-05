@@ -4,38 +4,38 @@ Main Page-https://dribbble.com/shots/21188194-sport-shop-website-design
 CallBack-https://evercart-0501.firebaseapp.com/__/auth/handler
 
 routes-
-    for Users{[/api/auth/]
-      authUser,(user auth user middleware)-PENDING
-      createNewUser,- DONE
-      getAllUser,-DONE
-      getUserById,- DONE
-      getLoggedInUser, -DONE
-      editProfile,-DONE
-      logoutUser,-PENDING
-      deleteUser,-DONE
-    },
-    for Products{[api/product]
-      createProduct,-DONE
-      getAllProducts,-DONE
-      getProductById,-DONE
-      getmyProducts,-DONE
-      updateProduct,-DONE
-      deleteProduct,-DONE
-    },
-    for Review{[/api/review]
-      getAllProductReview,-DONE
-      CreateProductReview,-DONE
-      updateProductReview,-DONE
-      deleteProductReview,-DONE
-    },
-    for Order{[/api/order]
-      createNewOrder,
-      getMyOrder,
-      getAllOrders,
-      getOrderById,
-      updateOrderToPaid,
-      UpdateOrdertoDelivered,
-    },
+		for Users{[/api/auth/]
+			authUser,(user auth user middleware)-PENDING
+			createNewUser,- DONE
+			getAllUser,-DONE
+			getUserById,- DONE
+			getLoggedInUser, -DONE
+			editProfile,-DONE
+			logoutUser,-PENDING
+			deleteUser,-DONE
+		},
+		for Products{[api/product]
+			createProduct,-DONE
+			getAllProducts,-DONE
+			getProductById,-DONE
+			getmyProducts,-DONE
+			updateProduct,-DONE
+			deleteProduct,-DONE
+		},
+		for Review{[/api/review]
+			getAllProductReview,-DONE
+			CreateProductReview,-DONE
+			updateProductReview,-DONE
+			deleteProductReview,-DONE
+		},
+		for Order{[/api/order]
+			createNewOrder,
+			getMyOrder,
+			getAllOrders,
+			getOrderById,
+			updateOrderToPaid,
+			UpdateOrdertoDelivered,
+		},
 
 
 To implement authentication
@@ -50,11 +50,48 @@ Whenever we send request to server we will send idToken to the backend
 On server we can use that idToken to find the data of the user
 
 getCurrentUser
-  - Get firebase userdata from the idToken
-  - That userdata contains a uid
-  - With that uid we get the userdata from our own database
-  - const user= await User.find({ uid })
+	- Get firebase userdata from the idToken
+	- That userdata contains a uid
+	- With that uid we get the userdata from our own database
+	- const user= await User.find({ uid })
 
 
-REPLANING THE PROJECT BACKEND 
-  
+REPLANING THE PROJECT BACKEND - [{(
+	routes-
+		for Users{[/api/auth/]
+			authUser,(user auth user middleware)
+			createNewUser,
+			getAllUser,
+			getUserById,
+			getLoggedInUser,
+			editProfile,
+			logoutUser,
+			deleteUser,
+			
+		},
+		for Products{[api/product]
+			createProduct,
+			getAllProducts,
+			getProductById,
+			getmyProducts,
+			updateProduct,
+			deleteProduct,
+		},
+		for Review{[/api/review]
+			getAllProductReview,
+			CreateProductReview,
+			updateProductReview,
+			deleteProductReview,
+		},
+		for Order{[/api/order]
+			createNewOrder,
+			getMyOrder,
+			getAllOrders,
+			getOrderById,
+			updateOrderToPaid,
+			UpdateOrdertoDelivered,
+		},
+)}]
+
+
+	

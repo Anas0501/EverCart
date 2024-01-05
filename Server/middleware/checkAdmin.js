@@ -8,6 +8,3 @@ exports.admin = (req,res,next) => {
 		throw new Error('Not Authorized');
 	}
 };
-
-
-
