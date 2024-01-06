@@ -30,7 +30,9 @@ app.get('/', (req, res) => {
 });
 
 // Routes
+app.use('/api/users', require('./routes/user'));
 
+// See if the server is running or not
 app.listen(PORT, () => {
 	console.log(`Server is running on port ${PORT}`.green.bold);
 });
