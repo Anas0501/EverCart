@@ -60,7 +60,7 @@ REPLANING THE PROJECT BACKEND - [{(
 	routes-
 		for Users{[/api/auth/]
 			authUser,(user auth user middleware)
-			createNewUser,
+			createNewUser,-DONE
 			getAllUser,
 			getUserById,
 			getLoggedInUser,
