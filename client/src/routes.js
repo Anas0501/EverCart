@@ -6,6 +6,7 @@ import HomePage from "./Pages/HomePage";
 import LoginUserPage from "./Pages/LoginUserPage";
 import RegisterUserPage from "./Pages/RegisterUserPage";
 
+// Router
 const router = createBrowserRouter([
 	{
 		path: routes.HOMEPAGE_PAGE,
