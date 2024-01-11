@@ -10,15 +10,15 @@ import RegisterUserPage from "./Pages/RegisterUserPage";
 const router = createBrowserRouter([
 	{
 		path: routes.HOMEPAGE_PAGE,
-		component: <HomePage />,
+		element: <HomePage />,
 	},
 	{
 		path: routes.LOGIN_PAGE,
-		component: <LoginUserPage />,
+		element: <LoginUserPage />,
 	},
 	{
 		path: routes.REGISTER_PAGE,
-		component: <RegisterUserPage />,
+		element: <RegisterUserPage />,
 	},
 ])
 
