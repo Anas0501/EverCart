@@ -12,6 +12,7 @@ import FaqsPage from "./Pages/FaqsPage";
 import CartPage from "./Pages/CartPage";
 import ProfilePage from "./Pages/ProfilePage";
 import SettingsPage from "./Pages/SettingsPage";
+import ForgotPasswordPage from "./Pages/ForgotPasswordPage";
 
 // Router
 const router = createBrowserRouter([
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
 	{
 		path: routes.SETTINGS,
 		element: <SettingsPage />
+	},
+	{
+		path: routes.FORGOT_PASSWORD,
+		element: <ForgotPasswordPage />
 	},
 ])
 

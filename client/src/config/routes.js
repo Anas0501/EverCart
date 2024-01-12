@@ -9,4 +9,5 @@ export default Object.freeze({
 	CART: '/cart',
 	PROFILE: '/profile',
 	SETTINGS: '/setting',
+	FORGOT_PASSWORD: '/forgot_password'
 });

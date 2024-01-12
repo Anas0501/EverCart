@@ -31,7 +31,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<AppBar position="static" sx={{ height: "80px", background: "#000000", margin: "0px", padding: "0px" }}>
+		<AppBar position="static" sx={{ height: "80px", background: "#000000", margin: "0px", padding: "0px", borderBottom: "1px solid #555555" }}>
 			<Toolbar>
 				<IconButton
 					size="large"
@@ -45,7 +45,7 @@ const Navbar = () => {
 				</IconButton>
 
 				<div style={{ display: 'flex', alignItems: 'center' }}>
-					<img src={logo} alt="logo" style={{ height: "80px", width: "250px" }} />
+					<img src={logo} alt="logo" style={{ height: "78px", width: "250px" }} />
 				</div>
 {/* THIS IS THE CODE FOR SMALL SCREENS */}
 				<Hidden mdUp>
@@ -94,7 +94,7 @@ const Navbar = () => {
 				</Hidden>
 {/* THIS IS THE CODE FOR BIG SCREENS */}
 				<Hidden mdDown>
-					<Typography variant="h6" sx={{ fontSize: "17px",justifyContent: 'flex-end', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+					<Typography variant="h6" sx={{ fontSize: "16px",justifyContent: 'flex-end', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
 						<Link to={routes.HOMEPAGE} style={{ color: "#ffffff", textDecoration: 'none', marginRight: '20px' }}>
 							Home
 						</Link>
