@@ -94,7 +94,7 @@ const Navbar = () => {
 				</Hidden>
 {/* THIS IS THE CODE FOR BIG SCREENS */}
 				<Hidden mdDown>
-					<Typography variant="h6" sx={{ fontSize: "16px",justifyContent: 'flex-end', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+					<Typography variant="h6" sx={{ fontSize: "16px",justifyContent: 'flex-end', flexGrow: 1, display: { xs: 'none', md: 'flex' }, marginTop: "10px" }}>
 						<Link to={routes.HOMEPAGE} style={{ color: "#ffffff", textDecoration: 'none', marginRight: '20px' }}>
 							Home
 						</Link>
@@ -111,7 +111,7 @@ const Navbar = () => {
 							FAQs
 						</Link>
 						<Link to={routes.CART} style={{ color: "#ffffff", textDecoration: 'none', marginRight: '20px' }}>
-							<ShoppingCartIcon sx={{ marginLeft: "20px" }} />
+							<ShoppingCartIcon sx={{ marginLeft: "10px" }} />
 						</Link>
 						<Link to={routes.PROFILE} style={{ color: "#ffffff", textDecoration: 'none', marginRight: '20px' }}>
 							<AccountCircleIcon />

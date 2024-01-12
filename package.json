@@ -16,6 +16,8 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.4",
     "@mui/material": "^5.15.4",
+    "axios": "^1.6.5",
+    "axois": "^0.0.1-security",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "cookie-parser": "^1.4.6",
