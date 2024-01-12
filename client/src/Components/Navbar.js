@@ -66,7 +66,7 @@ const Navbar = () => {
 						onClose={handleDrawerClose}
 					>
 						<MenuItem onClick={handleDrawerClose}>
-							<Link to={routes.HOMEPAGE_PAGE} style={{ color: "#ffffff", textDecoration: 'none' }}>Home</Link>
+							<Link to={routes.HOMEPAGE} style={{ color: "#ffffff", textDecoration: 'none' }}>Home</Link>
 						</MenuItem>
 						<MenuItem onClick={handleDrawerClose}>
 							<Link to={routes.BOLGS} style={{ color: "#ffffff", textDecoration: 'none' }}>Blogs</Link>
@@ -95,7 +95,7 @@ const Navbar = () => {
 {/* THIS IS THE CODE FOR BIG SCREENS */}
 				<Hidden mdDown>
 					<Typography variant="h6" sx={{ fontSize: "17px",justifyContent: 'flex-end', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-						<Link to={routes.HOMEPAGE_PAGE} style={{ color: "#ffffff", textDecoration: 'none', marginRight: '20px' }}>
+						<Link to={routes.HOMEPAGE} style={{ color: "#ffffff", textDecoration: 'none', marginRight: '20px' }}>
 							Home
 						</Link>
 						<Link to={routes.BOLGS} style={{ color: "#ffffff", textDecoration: 'none', marginRight: '20px' }}>

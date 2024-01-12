@@ -1,5 +1,5 @@
 export default Object.freeze({
-	HOMEPAGE_PAGE: '/',
+	HOMEPAGE: '/',
 	LOGIN_PAGE: '/login',
 	REGISTER_PAGE: '/register',
 	BOLGS: '/blogs',
@@ -8,4 +8,5 @@ export default Object.freeze({
 	FAQS: '/faqs',
 	CART: '/cart',
 	PROFILE: '/profile',
+	SETTINGS: '/setting',
 });

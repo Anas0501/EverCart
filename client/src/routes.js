@@ -9,7 +9,7 @@ import RegisterUserPage from "./Pages/RegisterUserPage";
 // Router
 const router = createBrowserRouter([
 	{
-		path: routes.HOMEPAGE_PAGE,
+		path: routes.HOMEPAGE,
 		element: <HomePage />,
 	},
 	{
