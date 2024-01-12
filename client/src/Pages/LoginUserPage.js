@@ -73,6 +73,14 @@ export default function SignInSide() {
 								name="email"
 								autoComplete="email"
 								autoFocus
+								sx={{
+									'& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
+										borderColor: 'white',
+									},
+									'& .MuiInputLabel-root.Mui-focused': {
+										color: 'white',
+									},
+								}}
 							/>
 							<TextField
 								margin="normal"
@@ -83,10 +91,14 @@ export default function SignInSide() {
 								type="password"
 								id="password"
 								autoComplete="current-password"
-							/>
-							<FormControlLabel
-								control={<Checkbox value="remember" color="primary" />}
-								label="Remember me"
+								sx={{
+									'& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
+										borderColor: 'white',
+									},
+									'& .MuiInputLabel-root.Mui-focused': {
+										color: 'white',
+									},
+								}}
 							/>
 							<Button
 								type="submit"
