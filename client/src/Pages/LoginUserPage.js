@@ -15,6 +15,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import Navbar from '../Components/Navbar';
 import defaultTheme from '../config/muiTheme'
 import EverCartDarkBg from '../assets/EverCartDark.png'
+import routes from '../config/routes';
 
 
 export default function SignInSide() {
@@ -102,7 +103,7 @@ export default function SignInSide() {
 									</Link>
 								</Grid>
 								<Grid item>
-									<Link href="#" variant="body2">
+									<Link href={routes.REGISTER_PAGE} variant="body2">
 										{"Don't have an account? Sign Up"}
 									</Link>
 								</Grid>
