@@ -4,7 +4,7 @@ export default Object.freeze({
 	REGISTER_PAGE: '/register',
 	BOLGS: '/blogs',
 	ABOUT: '/about',
-	CONTACT_US: '/contact',
+	CONTACT_US: '/contact_us',
 	FAQS: '/faqs',
 	CART: '/cart',
 	PROFILE: '/profile',
