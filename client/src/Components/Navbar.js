@@ -94,7 +94,7 @@ const Navbar = () => {
 				</Hidden>
 {/* THIS IS THE CODE FOR BIG SCREENS */}
 				<Hidden mdDown>
-					<Typography variant="h6" sx={{ fontSize: "18px",justifyContent: 'flex-end', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+					<Typography variant="h6" sx={{ fontSize: "17px",justifyContent: 'flex-end', flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
 						<Link to={routes.HOMEPAGE_PAGE} style={{ color: "#ffffff", textDecoration: 'none', marginRight: '20px' }}>
 							Home
 						</Link>
