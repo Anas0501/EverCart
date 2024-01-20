@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 // redux
 import { Provider } from 'react-redux'
-import { store } from './store/store';
+import store from './store/store';
 
 // MUI
 import { ThemeProvider } from "@mui/material";

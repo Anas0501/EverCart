@@ -13,7 +13,6 @@ import { ThemeProvider } from '@mui/material/styles';
 import Navbar from '../Components/Navbar';
 import defaultTheme from '../config/muiTheme'
 import routes from '../config/routes';
-import { signInWithGoogle } from '../store/actions/auth';
 import { useDispatch } from 'react-redux';
 
 
@@ -29,9 +28,6 @@ export default function SignInSide() {
 		});
 	};
 
-	const handleGoogleSignIn = async () => {
-		await signInWithGoogle();
-	};
 
 	return (
 		<ThemeProvider theme={defaultTheme}>
@@ -102,7 +98,6 @@ export default function SignInSide() {
 							fullWidth
 							variant="contained"
 							sx={{ mt: 0, mb: 2, border: '1px solid grey' }}
-							onClick={handleGoogleSignIn}
 						>
 							Sign In With Google
 						</Button>
