@@ -13,9 +13,13 @@ import { ThemeProvider } from '@mui/material/styles';
 import Navbar from '../Components/Navbar';
 import defaultTheme from '../config/muiTheme'
 import routes from '../config/routes';
+import { signInWithGoogle } from '../store/actions/auth';
+import { useDispatch } from 'react-redux';
 
 
 export default function SignInSide() {
+	const dispatch = useDispatch();
+
 	const handleSubmit = (event) => {
 		event.preventDefault();
 		const data = new FormData(event.currentTarget);
@@ -23,6 +27,10 @@ export default function SignInSide() {
 			email: data.get('email'),
 			password: data.get('password'),
 		});
+	};
+
+	const handleGoogleSignIn = async () => {
+		await signInWithGoogle();
 	};
 
 	return (
@@ -87,7 +95,16 @@ export default function SignInSide() {
 							variant="contained"
 							sx={{ mt: 3, mb: 2, border: '1px solid grey' }}
 						>
-							Sign Up
+							Sign In
+						</Button>
+						<Button
+							type="submit"
+							fullWidth
+							variant="contained"
+							sx={{ mt: 0, mb: 2, border: '1px solid grey' }}
+							onClick={handleGoogleSignIn}
+						>
+							Sign In With Google
 						</Button>
 						<Grid container>
 							<Grid item xs>
