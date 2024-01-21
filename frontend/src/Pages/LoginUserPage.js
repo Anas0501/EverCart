@@ -14,6 +14,7 @@ import Navbar from '../Components/Navbar';
 import defaultTheme from '../config/muiTheme'
 import routes from '../config/routes';
 import { useDispatch } from 'react-redux';
+import {signInWithGoogle} from '../store/actions/auth';
 
 
 export default function SignInSide() {
@@ -28,10 +29,14 @@ export default function SignInSide() {
 		});
 	};
 
+	const handleGoogleSignIn = () => {
+		dispatch(signInWithGoogle());
+	 };
+
 
 	return (
 		<ThemeProvider theme={defaultTheme}>
-      <Navbar />
+			<Navbar />
 			<Container component="main" maxWidth="xs">
 				<CssBaseline />
 				<Box
@@ -98,6 +103,7 @@ export default function SignInSide() {
 							fullWidth
 							variant="contained"
 							sx={{ mt: 0, mb: 2, border: '1px solid grey' }}
+							onClick={handleGoogleSignIn}
 						>
 							Sign In With Google
 						</Button>
